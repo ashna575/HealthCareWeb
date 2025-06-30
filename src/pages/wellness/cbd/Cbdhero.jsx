@@ -99,7 +99,7 @@ const CBDLayout = () => {
       category: "Health",
       readTime: "7 min read",
       author: "Dr. Emily Rodriguez",
-       link: "/article/cbd-what-we-know",
+       link: "/wellness/cbd/learn-more-about-cbd/cbd-oil-benefits",
     },
     {
       id: 4,
@@ -111,7 +111,7 @@ const CBDLayout = () => {
       category: "Beginner",
       readTime: "4 min read",
       author: "Jessica Wilson",
-       link: "/article/cbd-what-we-know",
+       link: "/wellness/cbd/how-much-cbd-should-i-take-the-first-time",
     },
     {
       id: 5,
@@ -123,7 +123,7 @@ const CBDLayout = () => {
       category: "Mental Health",
       readTime: "6 min read",
       author: "Dr. Mark Thompson",
-       link: "/article/cbd-what-we-know",
+       link: "/wellness/cbd/best-cbd-oil-for-anxiety",
     },
     {
       id: 6,
@@ -135,7 +135,7 @@ const CBDLayout = () => {
       category: "Pain Relief",
       readTime: "8 min read",
       author: "Dr. Lisa Park",
-       link: "/article/cbd-what-we-know",
+       link: "/wellness/cbd/cbd-oil-for-pain",
     },
   ];
 
