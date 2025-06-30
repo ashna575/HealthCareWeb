@@ -87,7 +87,7 @@ const CBDLayout = () => {
       category: "Guide",
       readTime: "3 min read",
       author: "Michael Chen",
-       link: "/article/cbd-what-we-know",
+       link: "/wellness/cbd/learn-more-about-cbd/What-do-you-know-about-different-types-of-CBD",
     },
     {
       id: 3,

@@ -97,6 +97,7 @@ import DigitalMentalHealthGuide from '@/pages/MentalHealth/Blogs/Blog5';
 
 
 import CbdArticle1 from "@/pages/wellness/cbd/CbdArticles/Blog1"
+import CbdArticle2 from "@/pages/wellness/cbd/CbdArticles/Blog2"
 
 
 const AllRoutes = () => {
@@ -323,7 +324,7 @@ EyeExaminationsGuide
 
 
 <Route path="/wellness/cbd/learn-more-about-cbd/Cannabidiol-(CBD):-What-We-Know-and-What-We-Don't" element={< CbdArticle1 />} />
-<Route path="/wellness/cbd/learn-more-about-cbd/What-do-you-know-about-different-types-of-CBD" element={< CbdArticle1 />} />
+<Route path="/wellness/cbd/learn-more-about-cbd/What-do-you-know-about-different-types-of-CBD" element={< CbdArticle2 />} />
 
     </Routes>
     </>
