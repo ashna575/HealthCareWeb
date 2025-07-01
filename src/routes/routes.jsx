@@ -114,7 +114,12 @@ import CbdArticle15 from "@/pages/wellness/cbd/CbdArticles/Blog15"
 import CbdArticle16 from "@/pages/wellness/cbd/CbdArticles/Blog16"
 
 
-import FitnessArticle1 from "@/pages/wellness/cbd/FitnessArticles/Blog1"
+import FitnessArticle1 from '@/pages/wellness/cbd/FitnessArticle/Blog1';
+import FitnessArticle2 from '@/pages/wellness/cbd/FitnessArticle/Blog2';
+import FitnessArticle3 from '@/pages/wellness/cbd/FitnessArticle/Blog3';
+import FitnessArticle4 from '@/pages/wellness/cbd/FitnessArticle/Blog4';
+
+
 
 
 const AllRoutes = () => {
@@ -357,6 +362,12 @@ EyeExaminationsGuide
 <Route path="/wellness/cbd/understanding-cbd-quality" element={< CbdArticle14 />} />
 <Route path="/wellness/cbd/CBD-dosage-guideline" element={< CbdArticle15 />} />
 <Route path="/wellness/cbd/Legal-Landscape" element={< CbdArticle16 />} />
+
+
+<Route path="/wellness/Fitness/Welcome-to-Healthline-Fitness" element={< FitnessArticle1 />} />
+<Route path="/wellness/Fitness/top-10-exercises" element={< FitnessArticle2 />} />
+<Route path="/wellness/Fitness/The-Best-Core-Exercises-for-All-Fitness-Levels" element={< FitnessArticle3 />} />
+<Route path="/wellness/Fitness/A-Beginners-Guide-to-Weight-Training" element={< FitnessArticle4 />} />
 
     </Routes>
     </>

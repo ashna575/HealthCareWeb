@@ -380,13 +380,13 @@ const HealthlineFitnessPage = () => {
   const articles = [
     {
       id: 1,
-      title: '10 Exercises to Tone Every Inch of Your Body',
+      title: '7 Exercises to Tone Every Inch of Your Body',
       description: 'We\'ve rounded up the 10 best and most powerful exercises...',
       image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=250&fit=crop',
       category: 'Full Body',
       readTime: '8 min read',
       difficulty: 'Intermediate',
-      link: '/fitness/10-exercises'
+      link: '/wellness/Fitness/top-10-exercises'
     },
     {
       id: 2,
@@ -396,7 +396,7 @@ const HealthlineFitnessPage = () => {
       category: 'Core Training',
       readTime: '6 min read',
       difficulty: 'All Levels',
-      link: '/fitness/best-core-exercises'
+      link: '/wellness/Fitness/The-Best-Core-Exercises-for-All-Fitness-Levels'
     },
     {
       id: 3,
@@ -406,7 +406,7 @@ const HealthlineFitnessPage = () => {
       category: 'Weight Training',
       readTime: '12 min read',
       difficulty: 'Beginner',
-      link: '/fitness/weight-training-guide'
+      link: '/wellness/Fitness/A-Beginners-Guide-to-Weight-Training'
     }
   ];
 
@@ -440,7 +440,7 @@ const HealthlineFitnessPage = () => {
                   category: 'Editorial',
                   readTime: '5 min read',
                   difficulty: 'All Levels',
-                  link: '/fitness/welcome'
+                  link: '/wellness/Fitness/Welcome-to-Healthline-Fitness'
                 })
               }
             >
