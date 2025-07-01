@@ -130,7 +130,7 @@ export default function FitnessNewsletterLayout() {
         "https://images.unsplash.com/photo-1576671081837-49000212a370?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80",
       readTime: "7 min read",
       category: "Exercise Science",
-      link: "",
+      link: "/wellness/Fitness/Science-behind-exercise",
     },
     {
       id: 8,
@@ -141,7 +141,7 @@ export default function FitnessNewsletterLayout() {
         "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80",
       readTime: "8 min read",
       category: "Equipment Guide",
-      link: "",
+      link: "/wellness/Fitness/Understanding-Fitness-Equipment:",
     },
     {
       id: 9,
@@ -152,7 +152,7 @@ export default function FitnessNewsletterLayout() {
         "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80",
       readTime: "6 min read",
       category: "Training Guide",
-      link: "",
+      link: "/wellness/Fitness/Progressive-Overload",
     },
     {
       id: 10,
@@ -163,7 +163,7 @@ export default function FitnessNewsletterLayout() {
         "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80",
       readTime: "9 min read",
       category: "Safety Guide",
-      link: "",
+      link: "/wellness/Fitness/Injury-Prevention",
     },
   ];
 

@@ -124,6 +124,10 @@ import FitnessArticle7 from '@/pages/wellness/cbd/FitnessArticle/Blog7';
 import FitnessArticle8 from '@/pages/wellness/cbd/FitnessArticle/Blog8';
 import FitnessArticle9 from '@/pages/wellness/cbd/FitnessArticle/Blog9';
 import FitnessArticle10 from '@/pages/wellness/cbd/FitnessArticle/Blog10';
+import FitnessArticle11 from '@/pages/wellness/cbd/FitnessArticle/Blog11';
+import FitnessArticle12 from '@/pages/wellness/cbd/FitnessArticle/Blog12';
+import FitnessArticle13 from '@/pages/wellness/cbd/FitnessArticle/Blog13';
+import FitnessArticle14 from '@/pages/wellness/cbd/FitnessArticle/Blog14';
 
 
 
@@ -381,6 +385,10 @@ EyeExaminationsGuide
 <Route path="/wellness/Fitness/Managing-Stress-and-Recovery-in-Modern-Fitness" element={< FitnessArticle8 />} />
 <Route path="/wellness/Fitness/Building-Your-network" element={< FitnessArticle9 />} />
 <Route path="/wellness/Fitness/Fitness-and-Nutrition" element={< FitnessArticle10 />} />
+<Route path="/wellness/Fitness/Science-behind-exercise" element={< FitnessArticle11 />} />
+<Route path="/wellness/Fitness/Understanding-Fitness-Equipment:" element={< FitnessArticle12 />} />
+<Route path="/wellness/Fitness/Progressive-Overload" element={< FitnessArticle13 />} />
+<Route path="/wellness/Fitness/Injury-Prevention" element={< FitnessArticle14 />} />
 
     </Routes>
     </>
