@@ -1726,123 +1726,194 @@ export default function FitnessArticle3() {
                 </div>
               )}
             </section>
-            <section 
-  className="bg-white rounded-xl shadow-md mb-8 overflow-hidden border border-gray-200"
-  onClick={() => toggleSection('equipment')}
->
-  <div className="flex justify-between items-center bg-gradient-to-r from-amber-50 to-white p-5 cursor-pointer">
-    <div className="flex items-center">
-      <div className="bg-amber-100 p-2 rounded-lg mr-4">
-        <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-amber-600" viewBox="0 0 20 20" fill="currentColor">
-          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
-        </svg>
-      </div>
-      <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800">
-        Core Training Equipment
-      </h2>
-    </div>
-    <ChevronDown className={`w-5 h-5 text-gray-500 transition-transform ${expandedSections.equipment ? 'rotate-180' : ''}`} />
-  </div>
-  
-  {expandedSections.equipment && (
-    <div className="p-5 pt-0">
-      {/* Equipment Types */}
-      <div className="mb-6">
-        <h3 className="font-semibold text-gray-800 mb-3">Essential Core Training Tools</h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
-          <div className="bg-white border border-gray-200 rounded-lg p-4">
-            <h4 className="font-medium text-amber-700 mb-2">Ab Wheel ($15-$40)</h4>
-            <p className="text-xs text-gray-600">
-              <span className="font-semibold">Best for:</span> Progressive overload, anti-extension
-              <br />
-              <span className="font-semibold">Exercises:</span> Rollouts, knee tucks, standing rollouts
-            </p>
-          </div>
-          <div className="bg-white border border-gray-200 rounded-lg p-4">
-            <h4 className="font-medium text-amber-700 mb-2">Sliders ($10-$25)</h4>
-            <p className="text-xs text-gray-600">
-              <span className="font-semibold">Best for:</span> Home workouts, instability training
-              <br />
-              <span className="font-semibold">Exercises:</span> Mountain climbers, knee tucks, pikes
-            </p>
-          </div>
-          <div className="bg-white border border-gray-200 rounded-lg p-4">
-            <h4 className="font-medium text-amber-700 mb-2">Hanging Straps ($20-$60)</h4>
-            <p className="text-xs text-gray-600">
-              <span className="font-semibold">Best for:</span> Advanced athletes, full-range movements
-              <br />
-              <span className="font-semibold">Exercises:</span> Leg raises, knee tucks, windshield wipers
-            </p>
-          </div>
-        </div>
-      </div>
+            <section
+              className="bg-white rounded-xl shadow-md mb-8 overflow-hidden border border-gray-200"
+              onClick={() => toggleSection("equipment")}
+            >
+              <div className="flex justify-between items-center bg-gradient-to-r from-amber-50 to-white p-5 cursor-pointer">
+                <div className="flex items-center">
+                  <div className="bg-amber-100 p-2 rounded-lg mr-4">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-5 h-5 text-amber-600"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800">
+                    Core Training Equipment
+                  </h2>
+                </div>
+                <ChevronDown
+                  className={`w-5 h-5 text-gray-500 transition-transform ${
+                    expandedSections.equipment ? "rotate-180" : ""
+                  }`}
+                />
+              </div>
 
-      {/* Equipment Comparison */}
-      <div className="bg-amber-50 rounded-lg p-5 mb-6">
-        <h3 className="font-semibold text-amber-800 mb-3">Equipment Comparison</h3>
-        <div className="overflow-x-auto">
-          <table className="min-w-full bg-white rounded-lg overflow-hidden">
-            <thead className="bg-amber-100">
-              <tr>
-                <th className="py-2 px-4 text-left text-xs font-medium text-amber-800">Equipment</th>
-                <th className="py-2 px-4 text-left text-xs font-medium text-amber-800">Portability</th>
-                <th className="py-2 px-4 text-left text-xs font-medium text-amber-800">Versatility</th>
-                <th className="py-2 px-4 text-left text-xs font-medium text-amber-800">Skill Level</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-gray-200 text-xs">
-              <tr>
-                <td className="py-3 px-4 font-medium text-gray-800">Resistance Bands</td>
-                <td className="py-3 px-4 text-gray-700">Excellent</td>
-                <td className="py-3 px-4 text-gray-700">High</td>
-                <td className="py-3 px-4 text-gray-700">All levels</td>
-              </tr>
-              <tr className="bg-gray-50">
-                <td className="py-3 px-4 font-medium text-gray-800">Medicine Ball</td>
-                <td className="py-3 px-4 text-gray-700">Good</td>
-                <td className="py-3 px-4 text-gray-700">Medium</td>
-                <td className="py-3 px-4 text-gray-700">Intermediate+</td>
-              </tr>
-              <tr>
-                <td className="py-3 px-4 font-medium text-gray-800">Cable Machine</td>
-                <td className="py-3 px-4 text-gray-700">Poor</td>
-                <td className="py-3 px-4 text-gray-700">Excellent</td>
-                <td className="py-3 px-4 text-gray-700">All levels</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
+              {expandedSections.equipment && (
+                <div className="p-5 pt-0">
+                  {/* Equipment Types */}
+                  <div className="mb-6">
+                    <h3 className="font-semibold text-gray-800 mb-3">
+                      Essential Core Training Tools
+                    </h3>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                      <div className="bg-white border border-gray-200 rounded-lg p-4">
+                        <h4 className="font-medium text-amber-700 mb-2">
+                          Ab Wheel ($15-$40)
+                        </h4>
+                        <p className="text-xs text-gray-600">
+                          <span className="font-semibold">Best for:</span>{" "}
+                          Progressive overload, anti-extension
+                          <br />
+                          <span className="font-semibold">Exercises:</span>{" "}
+                          Rollouts, knee tucks, standing rollouts
+                        </p>
+                      </div>
+                      <div className="bg-white border border-gray-200 rounded-lg p-4">
+                        <h4 className="font-medium text-amber-700 mb-2">
+                          Sliders ($10-$25)
+                        </h4>
+                        <p className="text-xs text-gray-600">
+                          <span className="font-semibold">Best for:</span> Home
+                          workouts, instability training
+                          <br />
+                          <span className="font-semibold">Exercises:</span>{" "}
+                          Mountain climbers, knee tucks, pikes
+                        </p>
+                      </div>
+                      <div className="bg-white border border-gray-200 rounded-lg p-4">
+                        <h4 className="font-medium text-amber-700 mb-2">
+                          Hanging Straps ($20-$60)
+                        </h4>
+                        <p className="text-xs text-gray-600">
+                          <span className="font-semibold">Best for:</span>{" "}
+                          Advanced athletes, full-range movements
+                          <br />
+                          <span className="font-semibold">Exercises:</span> Leg
+                          raises, knee tucks, windshield wipers
+                        </p>
+                      </div>
+                    </div>
+                  </div>
 
-      {/* DIY Options */}
-      <div className="bg-white border border-gray-200 rounded-lg p-5">
-        <h3 className="font-semibold text-gray-800 mb-3">Budget-Friendly Alternatives</h3>
-        <div className="flex flex-col md:flex-row gap-4">
-          <div className="flex-1">
-            <div className="flex items-start mb-2">
-              <span className="bg-amber-100 text-amber-800 rounded-full w-5 h-5 flex items-center justify-center mr-2 mt-0.5 flex-shrink-0 text-xs">1</span>
-              <p className="text-sm text-gray-600">Towels can substitute for sliders on hard floors</p>
-            </div>
-            <div className="flex items-start mb-2">
-              <span className="bg-amber-100 text-amber-800 rounded-full w-5 h-5 flex items-center justify-center mr-2 mt-0.5 flex-shrink-0 text-xs">2</span>
-              <p className="text-sm text-gray-600">Backpack with books for weighted core exercises</p>
-            </div>
-          </div>
-          <div className="flex-1">
-            <div className="flex items-start mb-2">
-              <span className="bg-amber-100 text-amber-800 rounded-full w-5 h-5 flex items-center justify-center mr-2 mt-0.5 flex-shrink-0 text-xs">3</span>
-              <p className="text-sm text-gray-600">Door anchor for resistance band exercises</p>
-            </div>
-            <div className="flex items-start">
-              <span className="bg-amber-100 text-amber-800 rounded-full w-5 h-5 flex items-center justify-center mr-2 mt-0.5 flex-shrink-0 text-xs">4</span>
-              <p className="text-sm text-gray-600">Broomstick for landmine exercises</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  )}
-</section>
+                  {/* Equipment Comparison */}
+                  <div className="bg-amber-50 rounded-lg p-5 mb-6">
+                    <h3 className="font-semibold text-amber-800 mb-3">
+                      Equipment Comparison
+                    </h3>
+                    <div className="overflow-x-auto">
+                      <table className="min-w-full bg-white rounded-lg overflow-hidden">
+                        <thead className="bg-amber-100">
+                          <tr>
+                            <th className="py-2 px-4 text-left text-xs font-medium text-amber-800">
+                              Equipment
+                            </th>
+                            <th className="py-2 px-4 text-left text-xs font-medium text-amber-800">
+                              Portability
+                            </th>
+                            <th className="py-2 px-4 text-left text-xs font-medium text-amber-800">
+                              Versatility
+                            </th>
+                            <th className="py-2 px-4 text-left text-xs font-medium text-amber-800">
+                              Skill Level
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-gray-200 text-xs">
+                          <tr>
+                            <td className="py-3 px-4 font-medium text-gray-800">
+                              Resistance Bands
+                            </td>
+                            <td className="py-3 px-4 text-gray-700">
+                              Excellent
+                            </td>
+                            <td className="py-3 px-4 text-gray-700">High</td>
+                            <td className="py-3 px-4 text-gray-700">
+                              All levels
+                            </td>
+                          </tr>
+                          <tr className="bg-gray-50">
+                            <td className="py-3 px-4 font-medium text-gray-800">
+                              Medicine Ball
+                            </td>
+                            <td className="py-3 px-4 text-gray-700">Good</td>
+                            <td className="py-3 px-4 text-gray-700">Medium</td>
+                            <td className="py-3 px-4 text-gray-700">
+                              Intermediate+
+                            </td>
+                          </tr>
+                          <tr>
+                            <td className="py-3 px-4 font-medium text-gray-800">
+                              Cable Machine
+                            </td>
+                            <td className="py-3 px-4 text-gray-700">Poor</td>
+                            <td className="py-3 px-4 text-gray-700">
+                              Excellent
+                            </td>
+                            <td className="py-3 px-4 text-gray-700">
+                              All levels
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                  {/* DIY Options */}
+                  <div className="bg-white border border-gray-200 rounded-lg p-5">
+                    <h3 className="font-semibold text-gray-800 mb-3">
+                      Budget-Friendly Alternatives
+                    </h3>
+                    <div className="flex flex-col md:flex-row gap-4">
+                      <div className="flex-1">
+                        <div className="flex items-start mb-2">
+                          <span className="bg-amber-100 text-amber-800 rounded-full w-5 h-5 flex items-center justify-center mr-2 mt-0.5 flex-shrink-0 text-xs">
+                            1
+                          </span>
+                          <p className="text-sm text-gray-600">
+                            Towels can substitute for sliders on hard floors
+                          </p>
+                        </div>
+                        <div className="flex items-start mb-2">
+                          <span className="bg-amber-100 text-amber-800 rounded-full w-5 h-5 flex items-center justify-center mr-2 mt-0.5 flex-shrink-0 text-xs">
+                            2
+                          </span>
+                          <p className="text-sm text-gray-600">
+                            Backpack with books for weighted core exercises
+                          </p>
+                        </div>
+                      </div>
+                      <div className="flex-1">
+                        <div className="flex items-start mb-2">
+                          <span className="bg-amber-100 text-amber-800 rounded-full w-5 h-5 flex items-center justify-center mr-2 mt-0.5 flex-shrink-0 text-xs">
+                            3
+                          </span>
+                          <p className="text-sm text-gray-600">
+                            Door anchor for resistance band exercises
+                          </p>
+                        </div>
+                        <div className="flex items-start">
+                          <span className="bg-amber-100 text-amber-800 rounded-full w-5 h-5 flex items-center justify-center mr-2 mt-0.5 flex-shrink-0 text-xs">
+                            4
+                          </span>
+                          <p className="text-sm text-gray-600">
+                            Broomstick for landmine exercises
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </section>
           </div>
 
           {/* Sidebar - takes 1/3 width on large screens */}

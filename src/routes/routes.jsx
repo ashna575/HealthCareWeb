@@ -118,6 +118,12 @@ import FitnessArticle1 from '@/pages/wellness/cbd/FitnessArticle/Blog1';
 import FitnessArticle2 from '@/pages/wellness/cbd/FitnessArticle/Blog2';
 import FitnessArticle3 from '@/pages/wellness/cbd/FitnessArticle/Blog3';
 import FitnessArticle4 from '@/pages/wellness/cbd/FitnessArticle/Blog4';
+import FitnessArticle5 from '@/pages/wellness/cbd/FitnessArticle/Blog5';
+import FitnessArticle6 from '@/pages/wellness/cbd/FitnessArticle/Blog6';
+import FitnessArticle7 from '@/pages/wellness/cbd/FitnessArticle/Blog7';
+import FitnessArticle8 from '@/pages/wellness/cbd/FitnessArticle/Blog8';
+import FitnessArticle9 from '@/pages/wellness/cbd/FitnessArticle/Blog9';
+import FitnessArticle10 from '@/pages/wellness/cbd/FitnessArticle/Blog10';
 
 
 
@@ -368,6 +374,13 @@ EyeExaminationsGuide
 <Route path="/wellness/Fitness/top-10-exercises" element={< FitnessArticle2 />} />
 <Route path="/wellness/Fitness/The-Best-Core-Exercises-for-All-Fitness-Levels" element={< FitnessArticle3 />} />
 <Route path="/wellness/Fitness/A-Beginners-Guide-to-Weight-Training" element={< FitnessArticle4 />} />
+
+<Route path="/wellness/Fitness/Understanding-Workout-Types" element={< FitnessArticle5 />} />
+<Route path="/wellness/Fitness/Essential-Questions-to-Ask-Your-Personal-Trainer" element={< FitnessArticle6 />} />
+<Route path="/wellness/Fitness/Real-Fitness-Transformations" element={< FitnessArticle7 />} />
+<Route path="/wellness/Fitness/Managing-Stress-and-Recovery-in-Modern-Fitness" element={< FitnessArticle8 />} />
+<Route path="/wellness/Fitness/Building-Your-network" element={< FitnessArticle9 />} />
+<Route path="/wellness/Fitness/Fitness-and-Nutrition" element={< FitnessArticle10 />} />
 
     </Routes>
     </>
