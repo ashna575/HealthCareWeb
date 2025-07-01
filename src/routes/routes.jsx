@@ -108,6 +108,13 @@ import CbdArticle9 from "@/pages/wellness/cbd/CbdArticles/Blog9"
 import CbdArticle10 from "@/pages/wellness/cbd/CbdArticles/Blog10"
 import CbdArticle11 from "@/pages/wellness/cbd/CbdArticles/Blog11"
 import CbdArticle12 from "@/pages/wellness/cbd/CbdArticles/Blog12"
+import CbdArticle13 from "@/pages/wellness/cbd/CbdArticles/Blog13"
+import CbdArticle14 from "@/pages/wellness/cbd/CbdArticles/Blog14"
+import CbdArticle15 from "@/pages/wellness/cbd/CbdArticles/Blog15"
+import CbdArticle16 from "@/pages/wellness/cbd/CbdArticles/Blog16"
+
+
+import FitnessArticle1 from "@/pages/wellness/cbd/FitnessArticles/Blog1"
 
 
 const AllRoutes = () => {
@@ -346,6 +353,10 @@ EyeExaminationsGuide
 <Route path="/wellness/cbd/Managing-Stress-and-Sleep-with-CBD-in-Modern-Life" element={< CbdArticle10 />} />
 <Route path="/wellness/cbd/building-cbd-support-network" element={< CbdArticle11 />} />
 <Route path="/wellness/cbd/Science-behind-CBD" element={< CbdArticle12 />} />
+<Route path="/wellness/cbd/CBD-and-Nutrition:-Maximizing-Your-Wellness-Routine" element={< CbdArticle13 />} />
+<Route path="/wellness/cbd/understanding-cbd-quality" element={< CbdArticle14 />} />
+<Route path="/wellness/cbd/CBD-dosage-guideline" element={< CbdArticle15 />} />
+<Route path="/wellness/cbd/Legal-Landscape" element={< CbdArticle16 />} />
 
     </Routes>
     </>

@@ -61,7 +61,7 @@ export default function CBDNewsletterLayout() {
         "https://images.unsplash.com/photo-1605648916361-9bc12ad6a569?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80",
       readTime: "8 min read",
       category: "Product Guide",
-       Link: "/wellness/cbd/Understanding-CBD-Products:-Oils-Edibles-Topicals-and-More",
+      Link: "/wellness/cbd/Understanding-CBD-Products:-Oils-Edibles-Topicals-and-More",
     },
     {
       id: 2,
@@ -72,7 +72,7 @@ export default function CBDNewsletterLayout() {
         "https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80",
       readTime: "6 min read",
       category: "Consumer Guidance",
-       Link: "/wellness/cbd/Essential-Questions-to-Ask-Your-CBD-Retailer",
+      Link: "/wellness/cbd/Essential-Questions-to-Ask-Your-CBD-Retailer",
     },
     {
       id: 3,
@@ -83,7 +83,7 @@ export default function CBDNewsletterLayout() {
         "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80",
       readTime: "10 min read",
       category: "User Story",
-       Link: "/wellness/cbd/Real-CBD-Experiences:-A-Users-Journey",
+      Link: "/wellness/cbd/Real-CBD-Experiences:-A-Users-Journey",
     },
     {
       id: 4,
@@ -94,7 +94,7 @@ export default function CBDNewsletterLayout() {
         "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80",
       readTime: "7 min read",
       category: "Wellness Guide",
-       Link: "/wellness/cbd/Managing-Stress-and-Sleep-with-CBD-in-Modern-Life",
+      Link: "/wellness/cbd/Managing-Stress-and-Sleep-with-CBD-in-Modern-Life",
     },
     {
       id: 5,
@@ -105,7 +105,7 @@ export default function CBDNewsletterLayout() {
         "https://images.unsplash.com/photo-1559181567-c3190ca9959b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80",
       readTime: "5 min read",
       category: "Support Resources",
-       Link: "/wellness/cbd/building-cbd-support-network",
+      Link: "/wellness/cbd/building-cbd-support-network",
     },
     {
       id: 6,
@@ -116,7 +116,7 @@ export default function CBDNewsletterLayout() {
         "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80",
       readTime: "9 min read",
       category: "Nutrition Guide",
-       Link: "/article1",
+      Link: "/wellness/cbd/CBD-and-Nutrition:-Maximizing-Your-Wellness-Routine",
     },
   ];
 
@@ -130,7 +130,7 @@ export default function CBDNewsletterLayout() {
         "https://images.unsplash.com/photo-1576671081837-49000212a370?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80",
       readTime: "7 min read",
       category: "Science",
-       Link: "/wellness/cbd/Science-behind-CBD",
+      Link: "/wellness/cbd/Science-behind-CBD",
     },
     {
       id: 8,
@@ -141,7 +141,7 @@ export default function CBDNewsletterLayout() {
         "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80",
       readTime: "8 min read",
       category: "Quality Assurance",
-       Link: "/article1",
+      Link: "/wellness/cbd/understanding-cbd-quality",
     },
     {
       id: 9,
@@ -152,7 +152,7 @@ export default function CBDNewsletterLayout() {
         "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80",
       readTime: "6 min read",
       category: "Dosage Guide",
-       Link: "/article1",
+      Link: "/wellness/cbd/CBD-dosage-guideline",
     },
     {
       id: 10,
@@ -163,7 +163,7 @@ export default function CBDNewsletterLayout() {
         "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80",
       readTime: "9 min read",
       category: "Legal Guide",
-       Link: "/article1",
+      Link: "/wellness/cbd/Legal-Landscape",
     },
   ];
 
