@@ -1,6 +1,6 @@
-"use client"
-
-import { useState, useEffect } from "react"
+"use client";
+import { Link } from "react-router";
+import { useState, useEffect } from "react";
 import {
   Mail,
   ChevronRight,
@@ -16,40 +16,40 @@ import {
   Youtube,
   FileText,
   Leaf,
-} from "lucide-react"
+} from "lucide-react";
 
 export default function CBDNewsletterLayout() {
-  const [email, setEmail] = useState("")
-  const [footerEmail, setFooterEmail] = useState("")
-  const [showPopup, setShowPopup] = useState(false)
-  const [selectedArticle, setSelectedArticle] = useState(null)
-  const [isAnimating, setIsAnimating] = useState(false)
-  const [showSuccessMessage, setShowSuccessMessage] = useState(false)
+  const [email, setEmail] = useState("");
+  const [footerEmail, setFooterEmail] = useState("");
+  const [showPopup, setShowPopup] = useState(false);
+  const [selectedArticle, setSelectedArticle] = useState(null);
+  const [isAnimating, setIsAnimating] = useState(false);
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setShowPopup(true)
-    }, 3000)
-    return () => clearTimeout(timer)
-  }, [])
+      setShowPopup(true);
+    }, 3000);
+    return () => clearTimeout(timer);
+  }, []);
 
   const handleSignUp = () => {
-    if (!email.trim()) return
-    setIsAnimating(true)
+    if (!email.trim()) return;
+    setIsAnimating(true);
     setTimeout(() => {
-      setShowSuccessMessage(true)
-      setEmail("")
-      setIsAnimating(false)
-      setTimeout(() => setShowSuccessMessage(false), 3000)
-    }, 1000)
-  }
+      setShowSuccessMessage(true);
+      setEmail("");
+      setIsAnimating(false);
+      setTimeout(() => setShowSuccessMessage(false), 3000);
+    }, 1000);
+  };
 
   const handleFooterSignUp = () => {
-    if (!footerEmail.trim()) return
-    setShowSuccessMessage(true)
-    setFooterEmail("")
-    setTimeout(() => setShowSuccessMessage(false), 3000)
-  }
+    if (!footerEmail.trim()) return;
+    setShowSuccessMessage(true);
+    setFooterEmail("");
+    setTimeout(() => setShowSuccessMessage(false), 3000);
+  };
 
   const treatments = [
     {
@@ -61,6 +61,7 @@ export default function CBDNewsletterLayout() {
         "https://images.unsplash.com/photo-1605648916361-9bc12ad6a569?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80",
       readTime: "8 min read",
       category: "Product Guide",
+       Link: "/wellness/cbd/Understanding-CBD-Products:-Oils-Edibles-Topicals-and-More",
     },
     {
       id: 2,
@@ -71,6 +72,7 @@ export default function CBDNewsletterLayout() {
         "https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80",
       readTime: "6 min read",
       category: "Consumer Guidance",
+       Link: "/wellness/cbd/Essential-Questions-to-Ask-Your-CBD-Retailer",
     },
     {
       id: 3,
@@ -81,6 +83,7 @@ export default function CBDNewsletterLayout() {
         "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80",
       readTime: "10 min read",
       category: "User Story",
+       Link: "/wellness/cbd/Real-CBD-Experiences:-A-Users-Journey",
     },
     {
       id: 4,
@@ -91,6 +94,7 @@ export default function CBDNewsletterLayout() {
         "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80",
       readTime: "7 min read",
       category: "Wellness Guide",
+       Link: "/wellness/cbd/Managing-Stress-and-Sleep-with-CBD-in-Modern-Life",
     },
     {
       id: 5,
@@ -101,6 +105,7 @@ export default function CBDNewsletterLayout() {
         "https://images.unsplash.com/photo-1559181567-c3190ca9959b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80",
       readTime: "5 min read",
       category: "Support Resources",
+       Link: "/wellness/cbd/building-cbd-support-network",
     },
     {
       id: 6,
@@ -111,8 +116,9 @@ export default function CBDNewsletterLayout() {
         "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80",
       readTime: "9 min read",
       category: "Nutrition Guide",
+       Link: "/article1",
     },
-  ]
+  ];
 
   const educationArticles = [
     {
@@ -124,6 +130,7 @@ export default function CBDNewsletterLayout() {
         "https://images.unsplash.com/photo-1576671081837-49000212a370?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80",
       readTime: "7 min read",
       category: "Science",
+       Link: "/wellness/cbd/Science-behind-CBD",
     },
     {
       id: 8,
@@ -134,6 +141,7 @@ export default function CBDNewsletterLayout() {
         "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80",
       readTime: "8 min read",
       category: "Quality Assurance",
+       Link: "/article1",
     },
     {
       id: 9,
@@ -144,6 +152,7 @@ export default function CBDNewsletterLayout() {
         "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80",
       readTime: "6 min read",
       category: "Dosage Guide",
+       Link: "/article1",
     },
     {
       id: 10,
@@ -154,8 +163,9 @@ export default function CBDNewsletterLayout() {
         "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80",
       readTime: "9 min read",
       category: "Legal Guide",
+       Link: "/article1",
     },
-  ]
+  ];
 
   const footerLinks = {
     company: [
@@ -172,7 +182,7 @@ export default function CBDNewsletterLayout() {
       { name: "Content Integrity", href: "#" },
       { name: "Newsletters", href: "#" },
     ],
-  }
+  };
 
   return (
     <div className="min-h-screen relative overflow-hidden">
@@ -216,11 +226,14 @@ export default function CBDNewsletterLayout() {
             <div className="text-white">
               <div className="flex items-center mb-4 animate-fadeIn">
                 <Leaf className="w-8 h-8 mr-3 text-lime-300 animate-pulse" />
-                <h1 className="text-4xl font-bold">Get Our Weekly CBD Newsletter</h1>
+                <h1 className="text-4xl font-bold">
+                  Get Our Weekly CBD Newsletter
+                </h1>
               </div>
               <p className="text-green-100 mb-6 text-lg leading-relaxed">
-                Join over 150K subscribers in receiving expert guidance on CBD products, wellness routines, quality
-                standards, and the latest breakthroughs in cannabinoid research.
+                Join over 150K subscribers in receiving expert guidance on CBD
+                products, wellness routines, quality standards, and the latest
+                breakthroughs in cannabinoid research.
               </p>
 
               <div className="space-y-4">
@@ -237,7 +250,9 @@ export default function CBDNewsletterLayout() {
                 <button
                   onClick={handleSignUp}
                   disabled={isAnimating}
-                  className={`bg-green-700 hover:bg-green-800 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg ${isAnimating ? "animate-spin" : ""}`}
+                  className={`bg-green-700 hover:bg-green-800 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg ${
+                    isAnimating ? "animate-spin" : ""
+                  }`}
                 >
                   {isAnimating ? (
                     <div className="w-6 h-6 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
@@ -247,17 +262,22 @@ export default function CBDNewsletterLayout() {
                 </button>
               </div>
 
-              <p className="text-green-200 text-sm mt-4 opacity-75">Your privacy is important to us</p>
+              <p className="text-green-200 text-sm mt-4 opacity-75">
+                Your privacy is important to us
+              </p>
             </div>
 
             <div className="relative">
-              <div className="relative z-10 animate-fadeIn" style={{ animationDelay: "0.5s" }}>
+              <div
+                className="relative z-10 animate-fadeIn"
+                style={{ animationDelay: "0.5s" }}
+              >
                 <img
                   src="https://images.unsplash.com/photo-1605648916361-9bc12ad6a569?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300&q=80"
                   alt="CBD products and hemp leaves"
                   className="rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-300"
                   onError={(e) => {
-                    e.target.src = "/placeholder.svg?height=300&width=400"
+                    e.target.src = "/placeholder.svg?height=300&width=400";
                   }}
                 />
                 <div className="absolute -top-4 -right-4 bg-white rounded-full p-3 shadow-lg animate-bounce">
@@ -271,7 +291,9 @@ export default function CBDNewsletterLayout() {
         {/* Treatments Section */}
         <div className="mb-16 animate-fadeIn" style={{ animationDelay: "1s" }}>
           <div className="flex items-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-800 mr-4">CBD PRODUCTS & WELLNESS</h2>
+            <h2 className="text-3xl font-bold text-gray-800 mr-4">
+              CBD PRODUCTS & WELLNESS
+            </h2>
             <div className="flex-1 h-1 bg-gradient-to-r from-green-300 to-emerald-300 rounded-full"></div>
           </div>
 
@@ -289,7 +311,7 @@ export default function CBDNewsletterLayout() {
                     alt={treatment.title}
                     className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
                     onError={(e) => {
-                      e.target.src = "/placeholder.svg?height=200&width=300"
+                      e.target.src = "/placeholder.svg?height=200&width=300";
                     }}
                   />
                   <div className="absolute top-4 left-4 bg-white bg-opacity-90 px-3 py-1 rounded-full text-sm font-medium text-gray-700">
@@ -305,7 +327,9 @@ export default function CBDNewsletterLayout() {
                   <h3 className="font-bold text-xl text-gray-800 mb-3 line-clamp-2 group-hover:text-green-600 transition-colors duration-300">
                     {treatment.title}
                   </h3>
-                  <p className="text-gray-600 mb-4 line-clamp-3 leading-relaxed">{treatment.description}</p>
+                  <p className="text-gray-600 mb-4 line-clamp-3 leading-relaxed">
+                    {treatment.description}
+                  </p>
                   <div className="flex items-center justify-between">
                     <div className="flex items-center text-sm text-gray-500">
                       <Users className="w-4 h-4 mr-1" />
@@ -320,10 +344,15 @@ export default function CBDNewsletterLayout() {
         </div>
 
         {/* Education Section */}
-        <div className="mb-12 animate-fadeIn" style={{ animationDelay: "1.5s" }}>
+        <div
+          className="mb-12 animate-fadeIn"
+          style={{ animationDelay: "1.5s" }}
+        >
           <div className="flex items-center mb-8">
             <Shield className="w-8 h-8 text-emerald-600 mr-4 animate-pulse" />
-            <h2 className="text-3xl font-bold text-gray-800 mr-4">EDUCATION & RESEARCH</h2>
+            <h2 className="text-3xl font-bold text-gray-800 mr-4">
+              EDUCATION & RESEARCH
+            </h2>
             <div className="flex-1 h-1 bg-gradient-to-r from-green-300 to-emerald-300 rounded-full"></div>
           </div>
 
@@ -342,7 +371,7 @@ export default function CBDNewsletterLayout() {
                       alt={article.title}
                       className="w-full h-40 md:h-full object-cover transition-transform duration-500 group-hover:scale-110"
                       onError={(e) => {
-                        e.target.src = "/placeholder.svg?height=200&width=300"
+                        e.target.src = "/placeholder.svg?height=200&width=300";
                       }}
                     />
                     <div className="absolute top-3 left-3 bg-white bg-opacity-90 px-2 py-1 rounded-full text-xs font-medium text-gray-700">
@@ -354,7 +383,9 @@ export default function CBDNewsletterLayout() {
                     <h3 className="font-bold text-lg text-gray-800 mb-3 line-clamp-2 group-hover:text-emerald-600 transition-colors duration-300">
                       {article.title}
                     </h3>
-                    <p className="text-gray-600 mb-4 line-clamp-2 leading-relaxed text-sm">{article.description}</p>
+                    <p className="text-gray-600 mb-4 line-clamp-2 leading-relaxed text-sm">
+                      {article.description}
+                    </p>
                     <div className="flex items-center justify-between">
                       <div className="flex items-center text-xs text-gray-500">
                         <Clock className="w-3 h-3 mr-1" />
@@ -377,7 +408,9 @@ export default function CBDNewsletterLayout() {
           {/* CBDline Logo and Social Icons */}
           <div className="flex flex-col md:flex-row justify-between items-start mb-8">
             <div className="mb-6 md:mb-0">
-              <h1 className="text-3xl font-bold text-gray-800 mb-4 animate-slideIn">CBDline</h1>
+              <h1 className="text-3xl font-bold text-gray-800 mb-4 animate-slideIn">
+                CBDline
+              </h1>
               <div className="flex space-x-4">
                 {[
                   { icon: Facebook, color: "text-blue-600" },
@@ -406,8 +439,9 @@ export default function CBDNewsletterLayout() {
                 Get our CBD newsletter
               </h3>
               <p className="text-gray-600 mb-6 text-sm leading-relaxed">
-                Stay informed with trusted CBD information, product reviews, wellness tips, and research updates
-                delivered to your inbox weekly.
+                Stay informed with trusted CBD information, product reviews,
+                wellness tips, and research updates delivered to your inbox
+                weekly.
               </p>
 
               <div className="flex mb-4">
@@ -427,7 +461,11 @@ export default function CBDNewsletterLayout() {
               </div>
 
               <p className="text-gray-500 text-xs">
-                Your <span className="underline cursor-pointer hover:text-emerald-600">privacy</span> is important to us
+                Your{" "}
+                <span className="underline cursor-pointer hover:text-emerald-600">
+                  privacy
+                </span>{" "}
+                is important to us
               </p>
             </div>
 
@@ -436,7 +474,11 @@ export default function CBDNewsletterLayout() {
               <div>
                 <ul className="space-y-3">
                   {footerLinks.company.map((link, index) => (
-                    <li key={index} className="animate-slideIn" style={{ animationDelay: `${index * 0.05 + 2.2}s` }}>
+                    <li
+                      key={index}
+                      className="animate-slideIn"
+                      style={{ animationDelay: `${index * 0.05 + 2.2}s` }}
+                    >
                       <a
                         href={link.href}
                         className="text-gray-600 hover:text-emerald-600 transition-colors duration-300 text-sm hover:underline"
@@ -471,11 +513,18 @@ export default function CBDNewsletterLayout() {
 
           {/* Copyright */}
           <div className="border-t border-gray-200 mt-8 pt-6 text-center">
-            <p className="text-gray-500 text-xs leading-relaxed animate-fadeIn" style={{ animationDelay: "2.5s" }}>
-              ©️ 2025 CBDline Media LLC. All rights reserved. CBDline Media is a wellness information company. Our
-              website services, content, and products are for informational purposes only. CBDline Media does not
-              provide medical advice, diagnosis, or treatment.
-              <a href="#" className="underline hover:text-emerald-600 transition-colors duration-300 ml-1">
+            <p
+              className="text-gray-500 text-xs leading-relaxed animate-fadeIn"
+              style={{ animationDelay: "2.5s" }}
+            >
+              ©️ 2025 CBDline Media LLC. All rights reserved. CBDline Media is a
+              wellness information company. Our website services, content, and
+              products are for informational purposes only. CBDline Media does
+              not provide medical advice, diagnosis, or treatment.
+              <a
+                href="#"
+                className="underline hover:text-emerald-600 transition-colors duration-300 ml-1"
+              >
                 See additional information
               </a>
             </p>
@@ -487,7 +536,9 @@ export default function CBDNewsletterLayout() {
       {showSuccessMessage && (
         <div className="fixed top-6 right-6 bg-green-500 text-white rounded-2xl shadow-2xl p-4 flex items-center animate-slideIn z-50">
           <CheckCircle className="w-6 h-6 mr-3" />
-          <span className="font-medium">Successfully subscribed to newsletter!</span>
+          <span className="font-medium">
+            Successfully subscribed to newsletter!
+          </span>
         </div>
       )}
 
@@ -508,7 +559,9 @@ export default function CBDNewsletterLayout() {
               <X className="w-5 h-5" />
             </button>
           </div>
-          <p className="text-gray-600 text-sm mb-3">"Understanding CBD Products" just published!</p>
+          <p className="text-gray-600 text-sm mb-3">
+            "Understanding CBD Products" just published!
+          </p>
           <button className="bg-gradient-to-r from-emerald-500 to-green-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:shadow-lg transition-all duration-300 transform hover:scale-105">
             Read Now
           </button>
@@ -525,7 +578,7 @@ export default function CBDNewsletterLayout() {
                 alt={selectedArticle.title}
                 className="w-full h-64 object-cover rounded-t-3xl"
                 onError={(e) => {
-                  e.target.src = "/placeholder.svg?height=264&width=672"
+                  e.target.src = "/placeholder.svg?height=264&width=672";
                 }}
               />
               <button
@@ -545,12 +598,19 @@ export default function CBDNewsletterLayout() {
                   {selectedArticle.readTime}
                 </span>
               </div>
-              <h2 className="text-3xl font-bold text-gray-800 mb-6">{selectedArticle.title}</h2>
-              <p className="text-gray-600 leading-relaxed mb-6">{selectedArticle.description}</p>
+              <h2 className="text-3xl font-bold text-gray-800 mb-6">
+                {selectedArticle.title}
+              </h2>
+              <p className="text-gray-600 leading-relaxed mb-6">
+                {selectedArticle.description}
+              </p>
               <div className="border-t pt-6">
-                <button className="bg-gradient-to-r from-green-500 to-emerald-600 text-white px-8 py-3 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+                <Link
+                  to={selectedArticle.Link}
+                  className="bg-gradient-to-r from-green-500 to-emerald-600 text-white px-8 py-3 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105 inline-block text-center"
+                >
                   Continue Reading
-                </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -640,5 +700,5 @@ export default function CBDNewsletterLayout() {
         }
       `}</style>
     </div>
-  )
+  );
 }

@@ -102,6 +102,12 @@ import CbdArticle3 from "@/pages/wellness/cbd/CbdArticles/Blog3"
 import CbdArticle4 from "@/pages/wellness/cbd/CbdArticles/Blog4"
 import CbdArticle5 from "@/pages/wellness/cbd/CbdArticles/Blog5"
 import CbdArticle6 from "@/pages/wellness/cbd/CbdArticles/Blog6"
+import CbdArticle7 from "@/pages/wellness/cbd/CbdArticles/Blog7"
+import CbdArticle8 from "@/pages/wellness/cbd/CbdArticles/Blog8"
+import CbdArticle9 from "@/pages/wellness/cbd/CbdArticles/Blog9"
+import CbdArticle10 from "@/pages/wellness/cbd/CbdArticles/Blog10"
+import CbdArticle11 from "@/pages/wellness/cbd/CbdArticles/Blog11"
+import CbdArticle12 from "@/pages/wellness/cbd/CbdArticles/Blog12"
 
 
 const AllRoutes = () => {
@@ -333,6 +339,13 @@ EyeExaminationsGuide
 <Route path="/wellness/cbd/how-much-cbd-should-i-take-the-first-time" element={< CbdArticle4 />} />
 <Route path="/wellness/cbd/best-cbd-oil-for-anxiety" element={< CbdArticle5 />} />
 <Route path="/wellness/cbd/cbd-oil-for-pain" element={< CbdArticle6 />} />
+
+<Route path="/wellness/cbd/Understanding-CBD-Products:-Oils-Edibles-Topicals-and-More" element={< CbdArticle7 />} />
+<Route path="/wellness/cbd/Essential-Questions-to-Ask-Your-CBD-Retailer" element={< CbdArticle8 />} />
+<Route path="/wellness/cbd/Real-CBD-Experiences:-A-Users-Journey" element={< CbdArticle9 />} />
+<Route path="/wellness/cbd/Managing-Stress-and-Sleep-with-CBD-in-Modern-Life" element={< CbdArticle10 />} />
+<Route path="/wellness/cbd/building-cbd-support-network" element={< CbdArticle11 />} />
+<Route path="/wellness/cbd/Science-behind-CBD" element={< CbdArticle12 />} />
 
     </Routes>
     </>
